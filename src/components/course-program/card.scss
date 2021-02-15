@@ -1,0 +1,218 @@
+@media screen and (max-device-width: 800pt) {
+    body .course-cards {
+        display: grid;
+        font-size: 18pt;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 110pt 110pt 110pt 110pt;
+        grid-gap: 20px;
+        grid-template-areas:
+            "col1 col2 col3"
+            "col4 col5 col6"
+            "col7 col8 col9"
+            "col10 col11 col12";
+
+        .title-group {
+            margin: 10pt 4pt 4pt !important;
+        }
+
+    }
+}
+@media screen and (max-device-width: 650pt) {
+    body .course-cards {
+        display: grid;
+        font-size: 18pt;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 80pt);
+        grid-gap: 20px;
+        grid-template-areas:
+            "col1 col2"
+            "col3 col4"
+            "col5 col6"
+            "col7 col8"
+            "col9 col10"
+            "col11 col12";
+
+        .title-group {
+            margin: 10pt 4pt 4pt !important;
+        }
+
+    }
+}
+
+.course-cards {
+    display: grid;
+    font-size: 18pt;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 110pt 110pt;
+    grid-gap: 20px;
+    grid-template-areas:
+        "col1 col2 col3 col4"
+        "col5 col6 col7 col8"
+        "col9 col10 col11 col12";
+
+    .card1 {
+        background-color: #E5BAA2 !important;
+    }
+
+    @for $i from 1 through 12 {
+        .card#{$i} {
+            width: 100%;
+            min-width: 170pt;
+            max-height: 150px;
+            border: 1px solid #9A593D;
+            grid-area: col#{$i};
+            background-color: white;
+            overflow: hidden;
+            transition: 0.6s ease-out;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+
+            .title-group {
+                font-family: AcrobatThin;
+                font-size: 18px;
+                justify-content: center;
+                margin: 1em;
+
+                .title-text {
+                    display: inline-flex;
+
+                    .bold {
+                        font-family: AcrobatThin;
+                        margin-right: 10px;
+                    }
+
+                    .thin {
+                        font-family: AcrobatExtraLight;
+                        transition: 0.8s ease-out;
+                    }
+                }
+
+                .free {
+                    font-weight: bold;
+                    color: white;
+                    float: right;
+                }
+            }
+
+            .detail-info {
+                font-family: AcrobatExtraLight;
+                font-size: 13px;
+                top: 20px;
+                height: 100%;
+                width: 100%;
+                margin-top: 40%;
+                opacity: 0;
+                transition: 0.6s ease-out;
+
+                div {
+                    font-family: Prata;
+                    font-size: 14px;
+                    margin: 10px 10px 10px 15px;
+                }
+
+                ul {
+                    margin: 10px 10px 10px 30px;
+                }
+
+            }
+
+
+            &:hover .title-group .title-text .thin {
+                font-weight: 800;
+            }
+
+            &:hover .detail-info {
+                height: max-content;
+                opacity: 1;
+                margin-top: 0;
+                z-index: 5;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                z-index: 2;
+                height: fit-content;
+                max-height: 500px;
+                box-shadow: 0 4px 20px #00000052;
+            }
+        }
+
+    }
+
+}
+
+// .course-cards {
+//     display: grid;
+//     font-size: 18pt;
+//     grid-template-columns: repeat(4, 1fr);
+//     grid-template-rows: 110pt 110pt;
+//     grid-gap: 20px;
+//     grid-template-areas:
+//         "col1 col2 col3 col4"
+//         "col5 col6 col7 col8"
+//         "col9 col10 col11 col12";
+
+
+//     @for $i from 1 through 12 {
+//         .card#{$i} {
+//             width: 100%;
+//             max-height: 150px;
+//             border: 1px solid #9A593D;
+//             grid-area: col#{$i};
+//             background-color: white;
+//             overflow: hidden;
+//             transition: max-height 0.5s ease-out;
+
+//             .title {
+//                 justify-content: center;
+//                 margin: 1em;
+
+//                 span {
+//                     font-family: AcrobatThin;
+//                     font-size: 15px;
+//                 }
+//             }
+
+//             .detail-info {
+//                 font-family: AcrobatExtraLight;
+//                 font-size: 13px;
+//                 top: 20px;
+//                 height: 100%;
+//                 width: 100%;
+//                 margin-top: 40%;
+//                 transition: 0.5s linear;
+
+
+//                 div {
+//                     font-family: Prata;
+//                     font-size: 14px;
+//                     margin: 10px 10px 10px 15px;
+//                 }
+
+//                 ul {
+//                     margin: 10px 10px 10px 30px;
+//                 }
+//             }
+
+
+//             &:hover .detail-info {
+//                 height: max-content;
+//                 margin-top: 0;
+//                 z-index: 5;
+//             }
+
+//             &:hover {
+//                 transform: scale(1.1);
+//                 z-index: 2;
+//                 height: fit-content;
+//                 max-height: 500px;
+//                 transition: max-height 0.5s ease-out;
+//                 box-shadow: 0 4px 20px #00000052;
+//             }
+//         }
+
+//     }
+
+// }

@@ -1,0 +1,53 @@
+$circle-height: 50px;
+
+@media screen and (max-device-width: 800pt) {
+    body .ul-button {
+        display: none;
+    }
+}
+
+ul {
+    overflow: hidden;
+}
+.ul-button {
+    grid-area: block3;
+    transition: 1s ease;
+    
+    .nav-block {
+        display: flex;
+        align-items: center;
+        height: $circle-height * 1.2;
+        width: fit-content;
+        float: right;
+
+    
+        .nav-button {
+            display: flex !important;
+            align-items: center;
+            color: black;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            text-decoration: none;   
+    
+            .text {
+                z-index: 2;
+            }
+    
+            .circle {
+                width: $circle-height;
+                height: $circle-height;
+                margin: 5px 5px 5px -30px;
+                border-radius: 50%;
+                background-color: #E5BAA2;
+                z-index: 1;
+                transition: 0.4s ease;
+    
+            }
+            &:hover .circle {
+                transform: scale(1.2);
+            }
+        }
+    }
+}

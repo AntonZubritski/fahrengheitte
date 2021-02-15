@@ -1,0 +1,32 @@
+.polaroid {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 55px;
+
+    .photo {
+        position: absolute;
+        width: 220pt;
+        top: 0px;
+        z-index: 2;
+        transition: 0.3s ease-in-out;
+    }
+
+    .polaroid-back {
+        position: absolute;
+        width: 220pt;
+        top: 20px;
+        margin-left: 10px;
+        transform: rotate(-5deg);
+        z-index: 1;
+        transition: 0.3s ease-out;
+    }
+
+    &:hover .photo {
+        transform: rotate(-5deg) scale(1.05);
+    }
+
+    &:hover .polaroid-back {
+        transform: translate(-25px, -5px);
+    }
+}

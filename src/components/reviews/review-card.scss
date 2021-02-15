@@ -1,0 +1,89 @@
+.cards-review {
+    background: #FFFFFF;
+    border: 0.5px solid #E5BAA2;
+    padding: 32px;
+    animation: fade2 0.8s;
+    transition: 0.8s;
+
+    .cards {
+        display: inline-flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 30px;
+
+        .photo-circle {
+            border-radius: 50%;
+        }
+
+        .logo {
+            width: 124px;
+            height: 124px;
+        }
+        div {
+            display: block;
+            font-family: AkrobatRegular;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+
+            .inst-block {
+                display: flex;
+                align-items: center;
+
+                svg {
+                    margin-right: 0;
+                }
+
+                span {
+                    margin-left: 13px;
+                }
+            }
+
+            &:last-child {
+                margin-top: 11px;
+                align-self: center;
+            }
+        }
+    }
+
+    .text-block {
+        font-family: AcrobatExtraLight;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+
+        div {
+            margin-bottom: 20px;
+        }
+    }
+}
+.transition {
+    animation: fade 0.8s;
+    transition: 0.8s;
+    opacity: 1;
+}
+
+@keyframes fade {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+        opacity: 1;
+      }
+  }
+  @keyframes fade2 {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+        opacity: 1;
+      }
+  }
+  

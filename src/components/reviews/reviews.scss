@@ -1,0 +1,147 @@
+@media screen and (max-device-width: 800pt) {
+    body .reviews {
+        margin: 70pt 40pt;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0fr 1.6fr;
+        grid-template-areas:
+            "h2 h2"
+            "block-three block-three"
+            "block-one block-two";
+    }
+}
+
+.reviews {
+    margin: 120pt 70pt;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0fr 1.6fr;
+    gap: 15px 15px;
+    grid-template-areas:
+        "h2 h2 h2"
+        "block-one block-two block-three";
+
+    h2 {
+        grid-area: h2;
+    }
+
+
+
+    .block {
+        img {
+            width: 100%;
+        }
+    }
+
+    .block-one {
+        overflow: hidden;
+        transition: 0.5s;
+        grid-area: block-one;
+    }
+
+    .block-two {
+        grid-area: block-two;
+        display: grid;
+        grid-template-rows: auto;
+        height: fit-content;
+        gap: 15px;
+        grid-template-areas:
+            "top"
+            "bottom";
+
+        .top {
+            grid-area: top;
+            overflow: hidden;
+
+        }
+
+        .bottom {
+            grid-area: bottom;
+            overflow: hidden;
+        }
+    }
+
+    .block-three {
+        grid-area: block-three;
+
+        .arrow-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+
+            .arrows {
+                margin: 0 10px;
+            }
+
+            .prev {
+                transform: rotate(180deg);
+            }
+
+
+        }
+    }
+
+
+}
+
+// .reviews {
+//     display: flex;
+//     flex-direction: column;
+//     margin: 120pt 0;
+
+//     .reviews-block {
+//         display: inline-flex;
+//         justify-content: center;
+
+//         .block {
+//             max-width: 30%;
+//             margin: 0 15px;
+
+//             img {
+//                 max-width: 100%;
+//             }
+//         }
+//         .block-one {
+//             width: 360px;
+//             height: 450px;
+//             overflow: hidden;
+//             transition: 0.5s;
+//         }
+
+//         .block-two {
+
+//             .top {
+//                 width: 360px;
+//                 height: 290px;
+//                 overflow: hidden;
+//                 margin-bottom: 30px;
+//             }
+//             .bottom {
+//                 width: 360px;
+//                 height: 290px;
+//                 overflow: hidden;
+//             }
+//         }
+
+//         .block-three {
+
+//             .arrow-button {
+//                 display: flex;
+//                 align-items: center;
+//                 justify-content: center;
+//                 padding: 30px;
+
+//                 .arrows {
+//                     margin: 0 10px;
+//                 }
+
+//                 .prev {
+//                     transform: rotate(180deg);
+//                 }
+
+
+//             }
+//         }
+//     }
+
+// }

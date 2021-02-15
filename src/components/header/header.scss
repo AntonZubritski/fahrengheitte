@@ -1,0 +1,22 @@
+@media screen and (max-device-width: 800pt) {
+    body .header {
+        margin: 70pt 40pt;
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5pt;
+        grid-template-areas:
+            "block1 block4"
+            "block2 block2"
+
+    }
+}
+
+.header {
+    margin: 20pt 70pt;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 5pt;
+    grid-template-areas:
+        "block1 block2 block3";
+}

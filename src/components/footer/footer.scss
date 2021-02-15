@@ -1,0 +1,35 @@
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #E5BAA2;
+    height: 200px;
+    padding: 0 70pt;
+    z-index: 1;
+
+    .footer-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 25pt;
+
+        .header-nav {
+            font-family: 'Acrobat';
+        }
+        .icon-block {
+            font-family: 'Acrobat';
+            display: flex;
+            flex-flow: column;
+
+            .icon {
+                width: fit-content;
+            }
+            div {
+                margin: 3pt 0;
+            }
+        }
+    }
+
+
+
+}

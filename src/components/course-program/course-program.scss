@@ -1,0 +1,72 @@
+@media screen and (max-device-width: 650pt) {
+    body .course-program {
+        margin: 70pt 40pt;
+        .course-info {
+            margin: 25px 0;   
+
+            ul {
+                li {
+                    margin: 0 20px;
+                }
+            }
+        }
+    }
+}
+.course-program {
+    margin: 120pt 70pt;
+    font-family: AkrobatThin;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+
+    .title {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+        .background-brown {
+            font-family: AkrobatThin;
+            background-color: #9A593D;
+            color: #ffffff;
+            padding: 6px 13px 8px 13px;
+        }
+        div {
+            margin-bottom: 20px;
+        }
+
+        span {
+            //чуть тоньше шрифт
+            font-family: AcrobatBold;
+        }
+
+        h2 {
+            width: 100%;
+            text-align: center;
+        }
+
+    }
+
+    .course-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 25px 40px 38px;
+
+        ul {
+            display: inline-flex;
+
+            li {
+                margin: 0 40px 0 40px;
+
+                p {
+                    font-family: AcrobatBold;
+                    color: #9A593D;
+                }
+                &::marker {
+                    color: #9A593D;
+                }
+            }
+        }
+    }
+}

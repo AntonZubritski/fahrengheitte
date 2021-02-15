@@ -1,0 +1,143 @@
+@media screen and (max-device-width: 800pt) {
+    body .head-title {
+        margin: 70pt 40pt;
+
+
+        .text-block {
+            width: 100%;
+
+            h1 {
+                margin-block-start: 1.4em;
+                text-align-last: center;
+
+            }
+        }
+
+        .stamp-block {
+            display: none;
+        }
+
+        .inst-block {
+
+            .background {
+                position: absolute;
+                width: 150%;
+                top: 0;
+                left: 0;
+            }
+
+            .coral-block {
+                display: none;
+            }
+
+            .inst1 {
+                display: none;
+            }
+
+            .inst2 {
+                display: none;
+            }
+        }
+        .stamp-block {
+            top: 25%;
+        }
+    }
+}
+
+.head-title {
+    display: flex;
+    margin: 20pt 70pt 200pt;
+    overflow: hidden;
+
+    .text-block {
+        display: flex;
+        flex-flow: column;
+        width: 535pt;
+        height: fit-content;
+        z-index: 4;
+
+        h1 {
+            margin-block-start: 1.4em;
+
+            .color-brown {
+                color: #e5baa2;
+            }
+        }
+
+        h6 {
+            display: flex;
+            align-items: center;
+            margin-block-start: 3em;
+            margin-block-end: 0;
+            padding: 8pt 0px;
+
+            .icon {
+                margin: 0 16px 0 16px;
+            }
+        }
+    }
+
+    .inst-block {
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        right: 0;
+
+        .coral-block {
+            position: absolute;
+            top: 90px;
+            z-index: 0;
+            background-color: #FDF3EA;
+            width: 370pt;
+            height: 32vw;
+            right: 0px;
+            transition: 1.4s ease;
+        }
+
+        .inst1 {
+            position: absolute;
+            width: 25%;
+            right: 150px;
+            top: 255px;
+            z-index: 1;
+            transition: 1s ease;
+        }
+
+        .inst2 {
+            position: absolute;
+            width: 33%;
+            right: 0;
+            top: 175px;
+            z-index: 2;
+        }
+    }
+
+    .background {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        z-index: 0;
+
+        svg {
+            width: 100%;
+        }
+    }
+    .stamp-block {
+        position: absolute;
+        z-index: 3;
+        left: 300pt;
+        top: 50%;
+    }
+}
+
+
+//onLoad Animation
+body {
+    .head-title .inst-block .instOnload {
+        right: 20%;
+    }
+
+    .head-title .inst-block .coralOnload {
+        width: 60%;
+    }
+}

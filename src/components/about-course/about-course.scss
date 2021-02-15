@@ -1,0 +1,86 @@
+@media screen and (max-device-width: 375pt) {
+    body .about-course {
+        flex-flow: column;
+        margin: 70pt 40pt;
+        width: auto;
+
+        .carousel-block {
+            position: relative;
+            width: 100%;
+        }
+
+        .text-block {
+            width: 100%;
+            margin: 0 0 0 0;
+            z-index: 3;
+
+            .btn-group {
+                width: auto;
+            }
+        }
+    }
+}
+
+
+.about-course {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    margin: 120pt 0 70pt;
+
+
+    .background {
+        position: absolute;
+        left: 0;
+        width: 100%;
+
+        svg {
+            width: 100%;
+
+            path {
+                width: 200px;
+            }
+        }
+    }
+
+    .text-block {
+        color: #1D2424;
+        width: 40%;
+        font-family: 'Acrobat';
+        margin: 0 30pt 0 70pt;
+        z-index: 3;
+
+        h2 {
+            margin-block-start: 0;
+        }
+
+        div {
+            line-height: 22px;
+            font-size: 1em;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            line-height: 24, 39px;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+            width: 370px;
+
+            div {
+                display: flex;
+                align-items: center;
+                white-space: nowrap;
+
+                .icon {
+                    margin: 0 16px 0 16px;
+                }
+            }
+        }
+
+    }
+        .slider {
+            width: 100%;
+        }
+}

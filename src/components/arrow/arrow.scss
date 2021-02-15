@@ -1,0 +1,44 @@
+.arrow-icon {
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+    cursor: pointer;
+    
+    .arrow {
+        width: 12px;
+        height: 12px;
+        border-width: 0 1px 1px 0 !important;
+        display: inline-block;
+        margin-left: -15px;
+    }
+
+    .white {
+        border: solid white;
+    }
+
+    .brown {
+        border: solid #9A593D
+    }
+
+    .line-arrow {
+        width: 35px;    
+        border-width: 0px 0px 1px 10px;
+        display: inline-block;
+    }
+    .line-arrow.long {
+        width: 155px;  
+    }
+    
+    .right {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+    }
+
+    &:hover {
+        transform: scale(1.12);
+    }
+    &:active {
+        transform: scaleX(1.3);
+        color: white;
+    }
+}
