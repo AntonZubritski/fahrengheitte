@@ -2,7 +2,7 @@ import React from 'react'
 import './burger.scss'
 
 const Burger = ({ burger, setBurger }) => {
-  console.log(burger)
+  
   return (
     <div>
       <input

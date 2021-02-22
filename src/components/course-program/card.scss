@@ -22,7 +22,7 @@
         display: grid;
         font-size: 18pt;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 80pt);
+        grid-template-rows: repeat(6, 100pt);
         grid-gap: 20px;
         grid-template-areas:
             "col1 col2"
@@ -57,7 +57,7 @@
     @for $i from 1 through 12 {
         .card#{$i} {
             width: 100%;
-            min-width: 170pt;
+            min-width: 130pt;
             max-height: 150px;
             border: 1px solid #9A593D;
             grid-area: col#{$i};

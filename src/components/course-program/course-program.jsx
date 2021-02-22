@@ -4,7 +4,7 @@ import './course-program.scss'
 
 const CourseProgram = () => {
   return (
-    <div className="course-program">
+    <div className="course-program" id='courseProgramm'>
       <div className="title">
         <h2>Программа курса</h2>
         <div>

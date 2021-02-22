@@ -1,3 +1,14 @@
+//--Media
+@media screen and (max-device-width: 375pt) {
+    body .polaroid {
+        .photo {
+            width: 100%;
+        }
+        .polaroid-back {
+            width: 100%;
+        }
+    }
+  }
 .polaroid {
     position: relative;
     width: 100%;

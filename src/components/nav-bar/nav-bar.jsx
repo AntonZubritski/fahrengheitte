@@ -1,10 +1,10 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
-import NavButton from '../nav-button/nav-button'
-import './nav-bar.scss'
+import React from "react";
+import { NavLink } from "react-router-dom";
+import NavButton from "../nav-button/nav-button";
+import "./nav-bar.scss";
 
-const NavBar = ({ burger }) => {
-  const classHeader = burger ? 'header-nav display' : 'header-nav'
+const NavBar = ({ burger, setModalWindow, modalWindow }) => {
+  const classHeader = burger ? "header-nav display" : "header-nav";
 
   return (
     <div className={classHeader}>
@@ -24,11 +24,10 @@ const NavBar = ({ burger }) => {
             Бесплатные материалы
           </NavLink>
         </li>
-        <NavButton /> 
+        <NavButton setModalWindow={setModalWindow} modalWindow={modalWindow} />
       </ul>
-
     </div>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;

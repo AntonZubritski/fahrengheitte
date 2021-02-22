@@ -1,0 +1,146 @@
+.modal {
+  font-family: AcrobatBold;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.308);
+  background-color: rgba(255, 255, 255, 0.308);
+  // background: linear-gradient(
+  //   0deg,
+  //   rgba(0, 0, 0, 0.7959558823529411) 0%,
+  //   rgba(0, 0, 0, 0.48783263305322133) 34%,
+  //   rgb(255, 255, 255) 100%
+  // );
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.4s ease;
+  z-index: 15;
+  opacity: 1;
+
+  .modal-block {
+    display: flex;
+    position: relative;
+    box-shadow: #9a593d -16px -15px 0px 0px;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    background-color: #ffffff;
+    top: 30%;
+    width: 500px;
+    height: 400px;
+    animation: modal 2s;
+
+    .form-line {
+      display: flex;
+      justify-content: space-between;
+      width: 300pt;
+      padding: 8pt 40pt;
+
+      .phoneInput {
+        display: inline-flex;
+        justify-content: space-between;
+        width: 62%;
+
+        .input1 {
+          width: 44px;
+        }
+        .input2 {
+          width: 30px;
+        }
+        .input3 {
+          width: 140px;
+        }
+      }
+
+      input {
+        font-family: AcrobatThin;
+        width: 60%;
+
+        &:focus {
+          outline: #9a593d auto 1px;
+        }
+      }
+
+
+    }
+    .butt {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0 40pt;
+
+      .button {
+        font-family: Acrobat;
+        border: none;
+        border-radius: 50%;
+        width: 60pt;
+        height: 60pt;
+        background-color: #9a593d;
+        color: #ffffff;
+        cursor: pointer;
+        transition: 0.1s ease;
+
+        &:focus {
+          outline: none;
+        }
+
+        &:hover {
+          transform: scale(1.08);
+
+          &:active {
+            transform: scale(1.02);
+          }
+        }
+      }
+    }
+
+    .close {
+      position: absolute;
+      cursor: pointer;
+      right: 0;
+      top: 0;
+      padding: 5px;
+      transition: 1ms;
+
+      &:active {
+        color: white;
+      }
+    }
+  }
+}
+
+.modal-active {
+  opacity: 1;
+  animation: fadeIn 0.8s;
+}
+.modal-disactive {
+  opacity: 0;
+  animation: fadeOut 0.8s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes modal {
+  0% {
+    box-shadow: #9a593d 0px 0px 0px 0px;
+  }
+  100% {
+    box-shadow: #9a593d -16px -15px 0px 0px;
+  }
+}

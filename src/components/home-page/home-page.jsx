@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import AboutCourse from '../about-course/about-course.jsx'
 import AboutMe from '../about-me/about-me.jsx'
 import CourseProgram from '../course-program/course-program.jsx'
@@ -10,12 +10,17 @@ import Reviews from '../reviews/reviews.jsx'
 import Tariffs from '../tariffs/tariffs.jsx'
 import WhatTheCourse from '../what-the-course/what-the-course.jsx'
 
+import firebase from 'firebase/app'
+import 'firebase/database'
+
 const HomePage = () => {
+  const [modalWindow, setModalWindow] = useState(false);
+
   return (
     <>
-      <Header />
+      <Header setModalWindow={setModalWindow} modalWindow={modalWindow} />
       <HeadTitle />
-      <AboutCourse />
+      <AboutCourse setModalWindow={setModalWindow} modalWindow={modalWindow} />
       <WhatTheCourse />
       <AboutMe />
       <CourseProgram />

@@ -1,11 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './card.scss'
-import { base } from '../../base/base.js'
+import firebase from 'firebase/app'
+import 'firebase/database'
+
 
 const Card = () => {
-  const { courseProgram } = base
+  const [courseProgramState, setCourseProgram] = useState([])
 
-  const cards = courseProgram.map((item, key) => {
+  useEffect(() => {
+    const db = firebase.database().ref('courseProgram')
+    // const courseProgram = db.ref('courseProgram')
+    db.on('value', (elem) => setCourseProgram(elem.val()));
+  },[])
+
+
+  const cards = courseProgramState.map((item, key) => {
     return (
       <div className={`card${item.id}`} key={key + item.id}>
         <div className="title-group">

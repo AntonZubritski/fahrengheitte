@@ -1,6 +1,23 @@
 //--Media
-@media screen and (max-device-width: 375pt) {
+@media screen and (max-device-width: 800pt) {
     body .about-me {
+        position: relative;
+        flex-flow: column;
+
+        .left-block {
+
+            .text-block {
+                margin: 55pt 14pt 0 14pt;
+            }
+            .background-block {
+                width: 100%;
+                height: 105%;
+            }
+        }
+        .right-block {
+            width: auto;
+            padding: 0 40pt;
+        }
 
     }
   }

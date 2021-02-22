@@ -1,3 +1,12 @@
+//--Media
+@media screen and (max-device-width: 800pt) {
+    body footer {
+        .header-nav {
+            display: none;
+        }
+    }
+  }
+
 footer {
     display: flex;
     justify-content: center;

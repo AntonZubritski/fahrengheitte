@@ -5,7 +5,7 @@ import SliderCenterMode from '../slider-slick/slider-slick.jsx'
 import { base } from '../../base/base.js'
 import './about-course.scss'
 
-const AboutCourse = () => {
+const AboutCourse = ({ setModalWindow, modalWindow }) => {
   const { texts, title } = base.aboutCourse
 
   return (
@@ -34,7 +34,7 @@ const AboutCourse = () => {
           </div>
           <div>
             <div>Записаться на курс</div>
-            <div className="icon">
+            <div className="icon" onClick={() => setModalWindow(!modalWindow)}>
               <CircleButton color="brown" />
             </div>
           </div>

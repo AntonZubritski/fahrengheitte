@@ -43,6 +43,7 @@ body .display {
         }
         &:last-child {
             display: none;
+            z-index: 5;
         }
     }
 
