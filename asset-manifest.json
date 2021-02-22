@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/fahrengheitte/static/css/main.ac83fcda.chunk.css",
+    "main.js": "/fahrengheitte/static/js/main.2e64a2cc.chunk.js",
+    "main.js.map": "/fahrengheitte/static/js/main.2e64a2cc.chunk.js.map",
+    "runtime-main.js": "/fahrengheitte/static/js/runtime-main.a7846187.js",
+    "runtime-main.js.map": "/fahrengheitte/static/js/runtime-main.a7846187.js.map",
+    "static/js/2.866cbfa0.chunk.js": "/fahrengheitte/static/js/2.866cbfa0.chunk.js",
+    "static/js/2.866cbfa0.chunk.js.map": "/fahrengheitte/static/js/2.866cbfa0.chunk.js.map",
+    "index.html": "/fahrengheitte/index.html",
+    "static/css/main.ac83fcda.chunk.css.map": "/fahrengheitte/static/css/main.ac83fcda.chunk.css.map",
+    "static/js/2.866cbfa0.chunk.js.LICENSE.txt": "/fahrengheitte/static/js/2.866cbfa0.chunk.js.LICENSE.txt",
+    "static/media/app.scss": "/fahrengheitte/static/media/Prata-Regular.a4837b5d.ttf",
+    "static/media/inst1.png": "/fahrengheitte/static/media/inst1.931971fd.png",
+    "static/media/inst2.png": "/fahrengheitte/static/media/inst2.65803560.png",
+    "static/media/mask-photo.png": "/fahrengheitte/static/media/mask-photo.bb23fb4b.png",
+    "static/media/polaroid.png": "/fahrengheitte/static/media/polaroid.60ffa9cd.png",
+    "static/media/rev-photo.png": "/fahrengheitte/static/media/rev-photo.0bc34a10.png",
+    "static/media/rev-photo2.png": "/fahrengheitte/static/media/rev-photo2.c9551af6.png",
+    "static/media/review.png": "/fahrengheitte/static/media/review.38ae74c7.png",
+    "static/media/review1.png": "/fahrengheitte/static/media/review1.7a2a122b.png",
+    "static/media/review2.png": "/fahrengheitte/static/media/review2.8b824a49.png",
+    "static/media/review3.png": "/fahrengheitte/static/media/review3.65803560.png",
+    "static/media/review4.png": "/fahrengheitte/static/media/review4.35d2ef16.png",
+    "static/media/review5.png": "/fahrengheitte/static/media/review5.3e46597d.png",
+    "static/media/slide1.png": "/fahrengheitte/static/media/slide1.3e46597d.png",
+    "static/media/slide2.png": "/fahrengheitte/static/media/slide2.35d2ef16.png",
+    "static/media/slide3.png": "/fahrengheitte/static/media/slide3.3e46597d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a7846187.js",
+    "static/js/2.866cbfa0.chunk.js",
+    "static/css/main.ac83fcda.chunk.css",
+    "static/js/main.2e64a2cc.chunk.js"
+  ]
+}
