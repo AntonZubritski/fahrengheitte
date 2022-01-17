@@ -24,6 +24,7 @@
 
 .about-me {
     display: flex;
+    margin: 70pt 0;
     justify-content: space-around;
     width: 100%;
 
@@ -86,9 +87,16 @@
             }
         }
     }
+    &:hover .photo {
+        transform: rotate(-5deg) scale(1.05) !important;
+    }
+
+    &:hover .polaroid-back {
+        transform: translate(-25px, -5px);
+    }
 }
 .icon {
-
+    display: flex;
     svg {
         margin-right: 20px;
         transition: 0.2s;

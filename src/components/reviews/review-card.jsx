@@ -4,8 +4,8 @@ import { InstagramSvg } from '../../svg/svg'
 
 const ReviewCard = ({review, isActive}) => {
   const { avatar, textReview, inst, name, id } = review
-  const classt = 'cards-review transition'
-  const clasb = 'cards-review'
+  const classt = 'cards-review fade1'
+  const clasb = 'cards-review fade2'
 
   return (
     <div className={isActive ? clasb : classt}>
@@ -15,7 +15,7 @@ const ReviewCard = ({review, isActive}) => {
         </div>
         <div>
           <div className="inst-block icon">
-            <InstagramSvg /> <span>{inst}</span>
+            <InstagramSvg /> <span>{`@${inst}`}</span>
           </div>
           <div>{name}</div>
         </div>

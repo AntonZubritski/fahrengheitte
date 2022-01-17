@@ -14,8 +14,11 @@ const review = images.filter((item) =>
 const revPhoto = images.filter((item) =>
   item.indexOf("rev-photo") > 0 ? item : null
 );
+const tariff = images.filter((item) =>
+  item.indexOf("tariff") > 0 ? item : null
+);
 
-export const base = {
+export const base = { 
   aboutCourse: {
     id: 1,
     title: "О курсе",
@@ -28,6 +31,51 @@ export const base = {
       `Присоединяйтесь и я уверена, что у нас все получится.`,
     ],
   },
+  userfulLinks: [{
+    id: 1,
+    title: "Способы передачи глубины пространства на фотографии",
+    texts: ["https://telegra.ph/Sposoby-peredachi-glubiny-prostranstva-na-fotografii-ch1-09-15"],
+  },
+  {
+    id: 2,
+    title: "Естественный свет в фотографии",
+    texts: ["http://letohin.livejournal.com/214988.html"],
+  },
+  {
+    id: 3,
+    title: "6 базовых схем освещения, которые должен знать каждый фотограф",
+    texts: ["http://www.si-foto.com/6-bazovyih-shem-osveshheniya-kotoryie-dolzhen-znat-kazhdyiy-fotograf/"],
+  },
+  {
+    id: 4,
+    title: "Гармония цвета, или гармонизация в цветовой композиции",
+    texts: ["http://www.bodu9.ru/statii/articles-about-working-with-color-in-the-visual-arts/garmoniya-cveta-ili-garmonizaciya-v-cvetovoj-kompozicii/"],
+  },
+  {
+    id: 5,
+    title: "What is equivalence and why should I care",
+    texts: ["https://www.dpreview.com/articles/2666934640/what-is-equivalence-and-why-should-i-care"],
+  },
+  {
+    id: 6,
+    title: "Как снимать незнакомых людей на улице",
+    texts: ["https://varlamov.ru/975569.html"],
+  },
+  {
+    id: 7,
+    title: "Секреты черно-белой съемки",
+    texts: ["https://nat-geo.ru/photo-secrets/sekrety-cherno-beloy-semki/"],
+  },
+  {
+    id: 8,
+    title: "Геометрия снимка",
+    texts: ["https://mi3ch.livejournal.com/4507347.html"],
+  },
+  {
+    id: 9,
+    title: "Философия квадрта",
+    texts: ["http://photo-element.ru/analysis/aks/aks.html"],
+  }],
   courseProgram: [
     {
       id: 1,
@@ -225,4 +273,22 @@ export const base = {
       },
     ],
   },
+  tariffs: [
+    {
+      id: 0,
+      title: "Основной",
+      background: tariff[0],
+      text: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+               incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam`,
+      price: "20$",
+    },
+    {
+      id: 1,
+      title: "Продвинутый",
+      background: tariff[1],
+      text: `quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+               consequat. Duis aute irure dolor in reprehenderit in `,
+      price: "30$",
+    },
+  ],
 };

@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import './reviews.scss'
 import { base } from '../../base/base.js'
-import Arrow from '../arrow/arrow'
-import ReviewCard from './review-card.jsx'
+import Arrow from '../arrow'
+import { ReviewCard } from './'
 
 const Reviews = () => {
   const [count, setCount] = useState(1)
@@ -17,7 +17,6 @@ const Reviews = () => {
       400
     )
   }
-
   const decCount = () => {
     setActive(!isActive)
     setTimeout(

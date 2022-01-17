@@ -1,45 +1,50 @@
-import React, { useEffect, useState } from 'react'
-import './card.scss'
-import firebase from 'firebase/app'
-import 'firebase/database'
+import React from 'react';
+import './card.scss';
+import { base } from '../../base/base.js';
 
+const Card = ({ list }) => {
+  const { courseProgram } = base;
 
-const Card = () => {
-  const [courseProgramState, setCourseProgram] = useState([])
+  const listFree = (item) => list === courseProgram && item.id === 1;
 
-  useEffect(() => {
-    const db = firebase.database().ref('courseProgram')
-    // const courseProgram = db.ref('courseProgram')
-    db.on('value', (elem) => setCourseProgram(elem.val()));
-  },[])
-
-
-  const cards = courseProgramState.map((item, key) => {
+  const cards = list.map((item, key) => {
     return (
-      <div className={`card${item.id}`} key={key + item.id}>
+      <div
+        className={listFree(item) ? `card${item.id} cardFree` : `card${item.id}`}
+        key={key + item.title}>
         <div className="title-group">
-          <div className='title-text'>
-            <div className='bold'>{item.id}.</div>
-            <div className='thin'>{item.title}</div>
+          <div className="title-text">
+            <div className="bold">{item.id}.</div>
+            <div className="thin">{item.title}</div>
           </div>
-          <span className="free">{item.id === 1 ? 'free' : null}</span>
+          {listFree(item) && <span className="free">free</span>}
         </div>
         <div className="detail-info">
           <ul>
             {item.texts.map((text, key) => {
-              return <li key={item.id + key}>{text}</li>
+              if (list === courseProgram) {
+                return <li key={item.id + key}>{text}</li>;
+              } else {
+                return (
+                  <div key={item.id + key} className="link">
+                    <a href={text} target="_blank">
+                      Перейти
+                    </a>
+                  </div>
+                );
+              }
             })}
           </ul>
         </div>
       </div>
-    )
-  })
+    );
+  });
 
   return (
-    <>
+    <div className="course-cards-wrapper">
       <div className="course-cards">{cards}</div>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default Card
+export default Card;

@@ -47,7 +47,7 @@
 .head-title {
     display: flex;
     margin: 20pt 70pt 200pt;
-    overflow: hidden;
+    // overflow: hidden;
 
     .text-block {
         display: flex;
@@ -123,10 +123,13 @@
         }
     }
     .stamp-block {
-        position: absolute;
-        z-index: 3;
-        left: 300pt;
+        // position: absolute;
+        // z-index: 3;
+        // left: 300pt;
+        // top: 50%;
+        position: relative;
         top: 50%;
+        right: 37%;
     }
 }
 

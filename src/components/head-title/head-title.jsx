@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./head-title.scss";
-import CircleButton from "../circle-button/circle-button.jsx";
+import CircleButton from "../circle-button";
 import inst1 from "../../img/inst1.png";
 import inst2 from "../../img/inst2.png";
 import { LineSvgHeadTitle, PostSvg } from "../../svg/svg";
-import { useState } from "react";
 
 const HeadTitle = () => {
   const [instClass1, setInstClass] = useState(null);
@@ -22,7 +21,7 @@ const HeadTitle = () => {
         <h4>Найди свой стиль фотографии и делись своим видением красоты</h4>
         <h6>
           <span>Посмотреть программу курса</span>
-          <a href="#courseProgramm">
+          <a href="#course-programm">
             <div className="icon">
               <CircleButton color="brown" />
             </div>

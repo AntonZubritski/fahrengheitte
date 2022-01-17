@@ -1,10 +1,13 @@
-import React from 'react'
-import Card from './card'
-import './course-program.scss'
+import React from "react";
+import { Card } from "./";
+import "./course-program.scss";
+import { base } from "../../base/base.js";
 
 const CourseProgram = () => {
+  const { courseProgram } = base;
+  
   return (
-    <div className="course-program" id='courseProgramm'>
+    <div className="course-program" id="course-programm">
       <div className="title">
         <h2>Программа курса</h2>
         <div>
@@ -12,7 +15,7 @@ const CourseProgram = () => {
           заданиями
         </div>
         <div>
-          попробуйте{' '}
+          попробуйте{" "}
           <span className="background-brown">первое занятие — бесплатное</span>
         </div>
       </div>
@@ -32,10 +35,9 @@ const CourseProgram = () => {
           </li>
         </ul>
       </div>
-
-      <Card />
+      <Card list={courseProgram}/>
     </div>
-  )
-}
+  );
+};
 
-export default CourseProgram
+export default CourseProgram;

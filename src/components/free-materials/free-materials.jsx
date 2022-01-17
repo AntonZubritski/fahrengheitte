@@ -1,14 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Download } from "../../svg/svg";
 import "./free-materials.scss";
+import * as actions from "../../redux/actions";
+import { useDispatch, useSelector } from "react-redux";
 
 const FreeMaterials = () => {
+  const { modalWindow  } = useSelector((state) => state.serviceStore)
+  const dispatch = useDispatch()
+  
   const [modalVideo1, setModalVideo1] = useState(false);
   const [modalVideo2, setModalVideo2] = useState(false);
 
-  useEffect(() => {
-    console.log(modalVideo1, modalVideo2);
-  });
+// переделать / сделать как открытие компонента
 
   const modalClass1 = modalVideo1
     ? "video-block video-block-width video-block-modal"
@@ -18,7 +21,7 @@ const FreeMaterials = () => {
     : "video-block-two video-block-width";
 
   return (
-    <div className="free-materials">
+    <div className="free-materials" id="free">
       <div className="left-block">
         <div className="bonus">
           <div>Бонус</div>
@@ -31,8 +34,11 @@ const FreeMaterials = () => {
           курса, и результат точно не заставит себя ждать!
         </div>
         <div className="materials-button">
-          <div>Скачать материалы</div>
-          <div className="icon">
+          <div>Перейти к материалам</div>
+          <div
+            className="icon"
+            onClick={() => dispatch(actions.openCloseModal(!modalWindow))}
+          >
             <Download />
           </div>
         </div>
@@ -43,12 +49,12 @@ const FreeMaterials = () => {
           className="background"
           onClick={() => setModalVideo1(!modalVideo1)}
         />
-        <iframe
+        {/* <iframe
           className={modalVideo1 ? "displayOn" : ""}
           src="https://www.youtube.com/embed/xFa2_PVMeDQ"
           frameBorder="0"
           allowFullScreen
-        ></iframe>
+        ></iframe> */}
       </div>
 
       <div className={modalClass2}>
@@ -56,14 +62,13 @@ const FreeMaterials = () => {
           className="background"
           onClick={() => setModalVideo2(!modalVideo2)}
         />
-        <iframe
-        className={modalVideo2 ? "displayOn" : ""}
+        {/* <iframe
+          className={modalVideo2 ? "displayOn" : ""}
           src="https://www.youtube.com/embed/xFa2_PVMeDQ"
           frameBorder="0"
           allowFullScreen
-        ></iframe>
+        ></iframe> */}
       </div>
-
     </div>
   );
 };

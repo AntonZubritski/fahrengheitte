@@ -1,0 +1,20 @@
+.loading {
+    opacity: 0;
+    display: flex;
+    height: max-content;
+    justify-content: center;
+    margin-top: 50vh;
+    animation: fade 3s;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    0%{
+        opacity: 0;
+    }
+
+}

@@ -12,6 +12,12 @@ ul {
 .ul-button {
     grid-area: block3;
     transition: 1s ease;
+
+    li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    }
     
     .nav-block {
         display: flex;
@@ -19,7 +25,6 @@ ul {
         height: $circle-height * 1.2;
         width: fit-content;
         float: right;
-
     
         .nav-button {
             display: flex !important;

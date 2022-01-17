@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import Slider from 'react-slick'
-import Arrow from '../arrow/arrow.jsx'
+import Arrow from '../arrow'
 import slide1 from '../../img/slide1.png'
 import slide2 from '../../img/slide2.png'
 import slide3 from '../../img/slide3.png'
@@ -20,9 +20,10 @@ const SliderCenterMode = () => {
     infinite: true,
     arrows: false,
     swipeToSlide: true,
-    slidesToShow: window.screen.width <= 500 ? 2 : 2.1,
+    slidesToShow: window.screen.width <= 500 ? 2 : 2.11,
     speed: 500,
   }
+
 console.log(window.screen.width <= 500 ? 'true' : 'false',);
   return (
     <div className="carousel-block">

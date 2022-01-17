@@ -28,7 +28,7 @@
 }
 
 .tarrifs {
-    margin: 120pt 70pt;
+    margin: 60pt 70pt;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 15px;
@@ -39,10 +39,39 @@
         grid-area: block-one;
     }
     .block-two {
+        color: white;
+        background-color: #9e83745d;
+        font-size: medium;
         grid-area: block-two;
+        transition: 0.4s ease;
+        
+
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.404) 6px 5px 6px 0px;
+        }
+
+        img {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+        }
     }
     .block-three {
+        color: white;
+        background-color: #9e83745d;
+        font-size: medium;
         grid-area: block-three;
+        transition: 0.4s ease;
+
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.404) 6px 5px 6px 0px;
+        }
+
+        img {
+            position: absolute;
+            z-index: -1;
+            bottom: 0;
+        }
     }
 
     .block {
@@ -50,14 +79,17 @@
         justify-content: space-between;
         align-items: center;
         flex-flow: column;
+        overflow: hidden;
+        position: relative;
         width: 100%;
         height: 454px;
-        background-color: #EEEEEE;
         font-family: AcrobatExtraLight;
         font-size: 24px;
+        
 
         .child-block {
             margin: 36px 0;
+            font-size: 20pt;
 
             &:last-child {
                 display: inline-flex;
@@ -66,9 +98,34 @@
                 span {
                     font-size: 18px;
                     line-height: 24px;
-                    margin: 0 17px;
+                    margin: 0 17px;                    
                 }
             }
+        }
+        .child-block-price {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40pt;
+            width: 40pt;
+            border-radius: 50%;
+            font-size: 20pt;
+            transition: 0.5s;
+        }    
+
+        .child-block-text {
+            opacity: 0;
+            margin: 0 10px;
+            transition: 0.5s;
+        }
+
+        &:hover .child-block-price {
+            color: black;
+            background-color: white;
+            transform: scale(1.3);
+        }
+        &:hover .child-block-text {
+            opacity: 1;            
         }
     }
 

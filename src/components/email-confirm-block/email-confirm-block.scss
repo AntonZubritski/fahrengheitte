@@ -1,0 +1,36 @@
+.EmailConfirmBlock {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  div {
+    margin: 20px;
+  }
+  .refresh {
+    width: min-content;
+    background-color: #E5BAA2;
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 100ms ease;
+    border-radius: 50px;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+    &:active {
+      transform: scaleX(1.1);
+      color:white
+    }
+  }
+  .verify {
+    color: #ff0000a8;
+    opacity: 0;
+    transition: 0.2s ease;
+  }
+  .error{
+    opacity: 1;
+  }
+}

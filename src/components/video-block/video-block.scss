@@ -1,0 +1,192 @@
+.user-page {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: min-content 1fr;
+    gap: 15px;
+    grid-template-areas: "block-one block-two";
+  
+    .block-one.active {
+      width: 400px;
+  
+      ul {
+        div {
+          margin-right: 10px;
+  
+          &:last-child {
+            width: 345px;
+            transform: translateX(5px);
+          }
+        }
+      }
+    }
+    .block-one {
+      width: 45pt;
+      grid-area: block-one;
+      background-color: #E5BAA2;
+      font-size: 16pt;
+      transition: 0.2s all ease;
+  
+      ul {
+        display: grid;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+  
+        li {
+          display: inline-flex;
+          align-items: center;
+          cursor: pointer;
+          height: 70px;
+          color: #eee;
+          border-bottom: solid 1px;
+  
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.438);
+            color: black;
+          }
+  
+          div {
+            margin-left: 20px;
+            margin-right: 30px;
+            transition: 0.2s ease;
+  
+            &:last-child {
+              transform: translateX(300px);
+              width: 345px;
+              z-index: 0;
+              transition: 0.5s ease;
+            }
+          }
+        }
+      }
+  
+      .toggle-menu {
+        display: flex;
+        justify-content: flex-end;
+  
+        .toggle.active {
+          i {
+            &::before {
+              transform: translate3d(-8px, 0, 0) rotate(-45deg) scale(0.7, 1);
+            }
+            &::after {
+              transform: translate3d(-8px, 0, 0) rotate(45deg) scale(0.7, 1);
+            }
+          }
+        }
+        .toggle {
+          width: 40px;
+          height: 40px;
+          display: block;
+          position: relative;
+          margin-top: 1rem;
+          margin-right: 20px;
+          cursor: pointer;
+        }
+        i {
+          top: 46%;
+          left: 18%;
+          display: block;
+          background: #eee;
+  
+          &::after,
+          &::before {
+            content: "";
+            display: block;
+            background-color: #eee;
+          }
+          &::after {
+            bottom: -10px;
+          }
+          &::before {
+            top: -10px;
+          }
+        }
+        i,
+        i::after,
+        i::before {
+          position: absolute;
+          width: 40px;
+          height: 4px;
+          border-radius: 4px;
+          transition: transform 0.15s;
+        }
+      }
+    }
+    .block-two {
+      display: flex;
+      position: relative;
+      flex-flow: column;
+      align-items: center;
+      margin-bottom: 15px;
+      padding: 15pt 50pt 50pt 50pt;
+      grid-area: block-two;
+      background-color: #fdf3ea;
+      z-index: 2;
+
+      .qier-player-container {
+        box-shadow: #0000003b 0px 0px 12px 5px;
+        transform:  scale(1.02);
+        animation: shadowPlayer 2s ease ;
+      }
+
+      @keyframes shadowPlayer {
+        0% {
+          box-shadow: #0000003b 0 0 0 0;
+          // transform: scale(1);
+          transform: scale(1);
+        }
+        100% {
+          box-shadow: #0000003b 0px 0px 12px 5px;
+          transform: scale(1.02);
+        }
+        
+      }
+  
+      h4 {
+        text-align: center;
+        transition: 1s ease;
+      }
+      .listGroup {
+        display: grid;
+        grid-template-columns: repeat(3, 35%);
+        gap: 10px;
+  
+        .listCourseText {
+          margin: 20px 0;
+        }
+      }
+      .flashIn {
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        
+        top: 0;
+      
+      }
+      .flashIn.active {
+        z-index: 0;
+        animation: flashIn 1s;
+      }
+      @keyframes flashIn {
+        0% {
+          opacity: 0;
+          z-index: 6;
+        }
+        50% {
+          opacity: 1;
+          z-index: 6;
+        }
+        100% {
+          opacity: 0;
+          z-index: 0;
+        }
+      }
+    }
+  }
+  
