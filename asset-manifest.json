@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/fahrengheitte/static/css/main.ac83fcda.chunk.css",
-    "main.js": "/fahrengheitte/static/js/main.2e64a2cc.chunk.js",
-    "main.js.map": "/fahrengheitte/static/js/main.2e64a2cc.chunk.js.map",
+    "main.css": "/fahrengheitte/static/css/main.cd1a5d75.chunk.css",
+    "main.js": "/fahrengheitte/static/js/main.9fb555cf.chunk.js",
+    "main.js.map": "/fahrengheitte/static/js/main.9fb555cf.chunk.js.map",
     "runtime-main.js": "/fahrengheitte/static/js/runtime-main.a7846187.js",
     "runtime-main.js.map": "/fahrengheitte/static/js/runtime-main.a7846187.js.map",
-    "static/js/2.866cbfa0.chunk.js": "/fahrengheitte/static/js/2.866cbfa0.chunk.js",
-    "static/js/2.866cbfa0.chunk.js.map": "/fahrengheitte/static/js/2.866cbfa0.chunk.js.map",
+    "static/js/2.10d9ab54.chunk.js": "/fahrengheitte/static/js/2.10d9ab54.chunk.js",
+    "static/js/2.10d9ab54.chunk.js.map": "/fahrengheitte/static/js/2.10d9ab54.chunk.js.map",
     "index.html": "/fahrengheitte/index.html",
-    "static/css/main.ac83fcda.chunk.css.map": "/fahrengheitte/static/css/main.ac83fcda.chunk.css.map",
-    "static/js/2.866cbfa0.chunk.js.LICENSE.txt": "/fahrengheitte/static/js/2.866cbfa0.chunk.js.LICENSE.txt",
+    "static/css/main.cd1a5d75.chunk.css.map": "/fahrengheitte/static/css/main.cd1a5d75.chunk.css.map",
+    "static/js/2.10d9ab54.chunk.js.LICENSE.txt": "/fahrengheitte/static/js/2.10d9ab54.chunk.js.LICENSE.txt",
     "static/media/app.scss": "/fahrengheitte/static/media/Prata-Regular.a4837b5d.ttf",
     "static/media/inst1.png": "/fahrengheitte/static/media/inst1.931971fd.png",
     "static/media/inst2.png": "/fahrengheitte/static/media/inst2.65803560.png",
@@ -25,12 +25,14 @@
     "static/media/review5.png": "/fahrengheitte/static/media/review5.3e46597d.png",
     "static/media/slide1.png": "/fahrengheitte/static/media/slide1.3e46597d.png",
     "static/media/slide2.png": "/fahrengheitte/static/media/slide2.35d2ef16.png",
-    "static/media/slide3.png": "/fahrengheitte/static/media/slide3.3e46597d.png"
+    "static/media/slide3.png": "/fahrengheitte/static/media/slide3.3e46597d.png",
+    "static/media/tariff1.jpeg": "/fahrengheitte/static/media/tariff1.55721175.jpeg",
+    "static/media/tariff2.jpeg": "/fahrengheitte/static/media/tariff2.b791d488.jpeg"
   },
   "entrypoints": [
     "static/js/runtime-main.a7846187.js",
-    "static/js/2.866cbfa0.chunk.js",
-    "static/css/main.ac83fcda.chunk.css",
-    "static/js/main.2e64a2cc.chunk.js"
+    "static/js/2.10d9ab54.chunk.js",
+    "static/css/main.cd1a5d75.chunk.css",
+    "static/js/main.9fb555cf.chunk.js"
   ]
 }
