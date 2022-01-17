@@ -32,8 +32,6 @@ const VideoBlock = (props) => {
             language="en"
             showVideoQuality={true}
             themeColor="#f23300"
-            // src480p={video480p}
-            // src720p={video720p}
             srcOrigin={videoRef}
           />
         </div>
