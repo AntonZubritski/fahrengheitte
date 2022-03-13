@@ -1,10 +1,9 @@
-import React from 'react'
-import './burger.scss'
+import React from 'react';
+import './burger.scss';
 
 const Burger = ({ burger, setBurger }) => {
-  
   return (
-    <div>
+    <div className="burger">
       <input
         className="menu-btn"
         type="checkbox"
@@ -15,6 +14,6 @@ const Burger = ({ burger, setBurger }) => {
         <span className="navicon"></span>
       </label>
     </div>
-  )
-}
-export default Burger
+  );
+};
+export default Burger;

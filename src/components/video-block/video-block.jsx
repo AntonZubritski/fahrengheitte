@@ -3,8 +3,6 @@ import { LeftMenuBar } from './';
 import { base } from '../../base/base.js';
 import { useDispatch, useSelector } from 'react-redux';
 import * as actions from '../../redux/actions';
-import QierPlayer from 'qier-player';
-import mdVideoFree from '../../output/output.mpd';
 import ShakaPlayer from 'shaka-player-react';
 import 'shaka-player/dist/controls.css';
 import './video-block.scss';
@@ -29,13 +27,13 @@ const VideoBlock = (props) => {
         <div className={classFlashIn}></div>
         <h4>{courseProgram[numberCourse].title}</h4>
         <div>
-          {videoRef && (
+          {/* {videoRef && (
             <ShakaPlayer
               autoPlay
               src={mdVideoFree}
               type="application/dash+xml"
             />
-          )}
+          )} */}
           {/* <QierPlayer
             width={740}
             height={420}
