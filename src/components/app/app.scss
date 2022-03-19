@@ -23,14 +23,6 @@
   font-family: AcrobatExtraLight;
   src: url(../../fonts/akrobat/Akrobat-ExtraLight.otf);
 }
-//--Font End
-
-@media screen and (max-device-width: 800pt) {
-  html,
-  body {
-    width: 375pt !important;
-  }
-}
 
 html, body, #root {
   height: 100%;

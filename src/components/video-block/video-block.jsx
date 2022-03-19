@@ -3,7 +3,8 @@ import { LeftMenuBar } from './';
 import { base } from '../../base/base.js';
 import { useDispatch, useSelector } from 'react-redux';
 import * as actions from '../../redux/actions';
-import QierPlayer from 'qier-player';
+import ShakaPlayer from 'shaka-player-react';
+import 'shaka-player/dist/controls.css';
 import './video-block.scss';
 
 const VideoBlock = (props) => {
@@ -18,7 +19,7 @@ const VideoBlock = (props) => {
   }, [numberCourse]);
 
   const classFlashIn = active ? 'flashIn active' : 'flashIn';
-
+  console.log(videoRef);
   return (
     <div className="user-page">
       <LeftMenuBar props />
@@ -26,14 +27,21 @@ const VideoBlock = (props) => {
         <div className={classFlashIn}></div>
         <h4>{courseProgram[numberCourse].title}</h4>
         <div>
-          <QierPlayer
+          {/* {videoRef && (
+            <ShakaPlayer
+              autoPlay
+              src={mdVideoFree}
+              type="application/dash+xml"
+            />
+          )} */}
+          {/* <QierPlayer
             width={740}
             height={420}
             language="en"
             showVideoQuality={true}
             themeColor="#f23300"
             srcOrigin={videoRef}
-          />
+          /> */}
         </div>
         <div>
           <h4>Что включает курс:</h4>

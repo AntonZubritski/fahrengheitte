@@ -1,5 +1,5 @@
-import { types } from "./constants";
-import { fBaseStorage, fBaseAuth, fBaseData } from "../firebase/firebase";
+import { types } from './constants';
+import { fBaseStorage, fBaseAuth, fBaseData } from '../firebase/firebase';
 
 //--------------------APP---------------------------
 export const setCheckAuth = (payload) => ({
@@ -23,7 +23,7 @@ export const setCheckAuth = (payload) => ({
 // };
 export const getAndSetSliderRef = () => {
   return (dispatch) => {
-    fBaseData.ref("images/slides/").on("value", (name) => {
+    fBaseData.ref('images/slides/').on('value', (name) => {
       const data = name.val();
       dispatch(setImageRef(data));
     });
@@ -54,8 +54,25 @@ export const getAndSetVideoRef = (numberCourse, paidTarifs) => {
         .then((url) => dispatch(setVideoRef(url)));
     };
   }
-
 };
+
+// export const getAndSetVideoRef = (numberCourse, paidTarifs) => {
+//   if (numberCourse && paidTarifs) {
+//     return (dispatch) => {
+//       fBaseStorage
+//         .ref(`/video/fahrengheitte_${numberCourse}.mov`)
+//         .getDownloadURL()
+//         .then((url) => dispatch(setVideoRef(url)));
+//     };
+//   } else {
+//     return (dispatch) => {
+//       fBaseStorage
+//         .ref("/video/output/output.mpd")
+//         .getDownloadURL()
+//         .then((url) => dispatch(setVideoRef(url)));
+//     };
+//   }
+// };
 
 export const choiceLesson = (number) => {
   return (dispatch) => {
@@ -117,7 +134,7 @@ export const createNewUser = (e, userInputInfo) => (dispatch) => {
   e.preventDefault();
   fBaseAuth
     .createUserWithEmailAndPassword(userInputInfo.email, userInputInfo.password)
-    .then((userInfo) => console.log("Ура", userInfo))
+    .then((userInfo) => console.log('Ура', userInfo))
     .then(() => {
       dispatch(verificationUs());
     })
@@ -135,30 +152,29 @@ const sendUserInfo = (userInputInfo) => (dispatch) => {
   };
   //save user-data in firebase
   fBaseData
-    .ref("users")
+    .ref('users')
     .push(info)
-    .catch((err) => alert("Уупс, что-то пошло не так:", err.message));
+    .catch((err) => alert('Уупс, что-то пошло не так:', err.message));
 };
 
 //Verification Send Mail
 export const verificationUs = () => (dispatch) => {
-  fBaseAuth.currentUser
-    .sendEmailVerification()
-    .catch(() => dispatch(verifyError()));
+  fBaseAuth.currentUser.sendEmailVerification().catch(() => dispatch(verifyError()));
 };
 //Сброс пароля
 export const resetPassword = (email) => (dispatch) => {
-fBaseAuth.sendPasswordResetEmail(email)
-  .then(() => {
-    // Password reset email sent!
-    // ..
-  })
-  .catch((error) => {
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    // ..
-  });
-}
+  fBaseAuth
+    .sendPasswordResetEmail(email)
+    .then(() => {
+      // Password reset email sent!
+      // ..
+    })
+    .catch((error) => {
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      // ..
+    });
+};
 //-------------FireBase function END---------------
 
 export const loginUser = (e, email, password) => (dispatch) => {
@@ -241,10 +257,9 @@ const checkForAdministrator = () => ({
 export const logIntoken = (e, token) => (dispatch) => {
   e.preventDefault();
   console.log(token);
-  fBaseAuth.signInWithCustomToken(token)
-  .then(info => {
-    console.log(info)
-  })
+  fBaseAuth.signInWithCustomToken(token).then((info) => {
+    console.log(info);
+  });
 };
 
 //----------------END-AdminPage--------------------

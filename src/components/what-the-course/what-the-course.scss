@@ -1,54 +1,58 @@
 @media screen and (max-device-width: 650pt) {
-    body .what-the-course {
-        margin: 70pt 40pt;
+  body .what-the-course {
+    margin: 70pt 40pt;
 
-        .grid-block {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            grid-gap: 20px;
-        }
+    .block {
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
     }
+    .grid-block {
+      justify-content: center;
+    }
+  }
 }
 .what-the-course {
-    margin: 70pt 70pt;
+  margin: 70pt 70pt;
 
-    h2 {
-        width: 100%;
-        text-align: center;
-    }
+  h2 {
+    width: 100%;
+    text-align: center;
+  }
 
-    .grid-block {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-gap: 20px;
+  .grid-block {
+    display: flex;
+    grid-gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
-        .block {
-            display: flex;
-            flex-direction: column;
-            margin-top: 30px;
+    .block {
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+      width: 300px;
+      justify-content: space-between;
 
-            h5 {
-                display: inline-flex;
-                align-items: center;
-                color: #9A593D;
+      h5 {
+        display: inline-flex;
+        align-items: center;
+        color: #9a593d;
 
-                .line {
-                    width: 67px;
-                    height: 0;
-                    margin-left: 11px;
-                    border-top: solid #9A593D 1px;
-                }
-            }
-
-            span {
-                font-family: AkrobatThin;
-                font-style: normal;
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 22px;
-            }
+        .line {
+          width: 67px;
+          height: 0;
+          margin-left: 11px;
+          border-top: solid #9a593d 1px;
         }
+      }
+
+      span {
+        font-family: AkrobatThin;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+      }
     }
+  }
 }

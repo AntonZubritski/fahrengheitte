@@ -1,10 +1,16 @@
+@media screen and (max-device-width: 800pt) {
+  .logo,
+  .burger {
+    height: 58px;
+  }
+}
 .logo {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   font-weight: bold;
   font-size: 1.7em;
-  // grid-area: block1;
+  justify-content: center;
   .free {
     font-size: 0.7em;
     color: #e5baa2;

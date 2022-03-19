@@ -1,6 +1,6 @@
 import React from 'react';
-import './card.scss';
 import { base } from '../../base/base.js';
+import './card.scss';
 
 const Card = ({ list }) => {
   const { courseProgram } = base;
