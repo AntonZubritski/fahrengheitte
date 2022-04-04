@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/fahrengheitte/static/css/main.bf7dcca6.chunk.css",
-    "main.js": "/fahrengheitte/static/js/main.6fbe3aa3.chunk.js",
-    "main.js.map": "/fahrengheitte/static/js/main.6fbe3aa3.chunk.js.map",
+    "main.css": "/fahrengheitte/static/css/main.383d364e.chunk.css",
+    "main.js": "/fahrengheitte/static/js/main.c4313e37.chunk.js",
+    "main.js.map": "/fahrengheitte/static/js/main.c4313e37.chunk.js.map",
     "runtime-main.js": "/fahrengheitte/static/js/runtime-main.a7846187.js",
     "runtime-main.js.map": "/fahrengheitte/static/js/runtime-main.a7846187.js.map",
     "static/css/2.383c6598.chunk.css": "/fahrengheitte/static/css/2.383c6598.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.21ff166d.chunk.js.map": "/fahrengheitte/static/js/2.21ff166d.chunk.js.map",
     "index.html": "/fahrengheitte/index.html",
     "static/css/2.383c6598.chunk.css.map": "/fahrengheitte/static/css/2.383c6598.chunk.css.map",
-    "static/css/main.bf7dcca6.chunk.css.map": "/fahrengheitte/static/css/main.bf7dcca6.chunk.css.map",
+    "static/css/main.383d364e.chunk.css.map": "/fahrengheitte/static/css/main.383d364e.chunk.css.map",
     "static/js/2.21ff166d.chunk.js.LICENSE.txt": "/fahrengheitte/static/js/2.21ff166d.chunk.js.LICENSE.txt",
     "static/media/app.scss": "/fahrengheitte/static/media/Prata-Regular.a4837b5d.ttf",
     "static/media/inst1.png": "/fahrengheitte/static/media/inst1.931971fd.png",
@@ -35,7 +35,7 @@
     "static/js/runtime-main.a7846187.js",
     "static/css/2.383c6598.chunk.css",
     "static/js/2.21ff166d.chunk.js",
-    "static/css/main.bf7dcca6.chunk.css",
-    "static/js/main.6fbe3aa3.chunk.js"
+    "static/css/main.383d364e.chunk.css",
+    "static/js/main.c4313e37.chunk.js"
   ]
 }
