@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import "./head-title.scss";
 import CircleButton from "../circle-button";
 import inst1 from "../../img/inst1.png";
 import inst2 from "../../img/inst2.png";
 import { LineSvgHeadTitle, PostSvg } from "../../svg/svg";
+import "./head-title.scss";
 
 const HeadTitle = () => {
   const [instClass1, setInstClass] = useState(null);

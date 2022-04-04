@@ -1,75 +1,77 @@
-// $color-time: 12s;
-// $step: $color-time/4;
+$color-time: 12s;
+$step: $color-time/4;
 
-// svg {
-//   display: block;
-//   margin-right: 0;
-//   cursor: pointer;
-// }
-// stop {
-//   animation: colors $color-time infinite;
-// }
-// .stop-2 {
-//   animation-delay: -$step;
-// }
-// .stop-3 {
-//   animation-delay: -$step * 2;
-// }
+svg {
+  display: block;
+  margin-right: 0;
+  cursor: pointer;
+}
+stop {
+  animation: colors $color-time infinite;
+}
+.stop-2 {
+  animation-delay: -$step;
+}
+.stop-3 {
+  animation-delay: -$step * 2;
+}
 
-// @keyframes colors {
-//   15% {
-//     stop-color: #fd5949;
-//   }
-//   30% {
-//     stop-color: #fdf497;
-//   }
-//   45% {
-//     stop-color: #fd5949;
-//   }
-//   60% {
-//     stop-color: #d6249f;
-//   }
-//   70% {
-//     stop-color: #285aeb;
-//   }
-//   80% {
-//     stop-color: #fd5949;
-//   }
-//   95% {
-//     stop-color: #d6249f;
-//   }
-// }
+@keyframes colors {
+  15% {
+    stop-color: #fd5949;
+  }
+  30% {
+    stop-color: #fdf497;
+  }
+  45% {
+    stop-color: #fd5949;
+  }
+  60% {
+    stop-color: #d6249f;
+  }
+  70% {
+    stop-color: #285aeb;
+  }
+  80% {
+    stop-color: #fd5949;
+  }
+  95% {
+    stop-color: #d6249f;
+  }
+}
 
-// .animationSvg {
-//   animation: dash 30s linear forwards infinite;
+.animationSvg {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 500;
+  animation: dash 30s linear forwards infinite;
 
-//   .double-line {
-//       transform: translateX(9px);
-//   }
-// }
-// @keyframes dash {
-//   0%,
-//   100% {
-//     stroke-dasharray: 2500 0;
-//     stroke-dashoffset: 0;
-//   }
-//   50% {
-//     stroke-dasharray: 0 2500;
-//     stroke-dashoffset: 1000;
-//   }
-// }
+  .double-line {
+      transform: translateX(9px);
+  }
+}
+@keyframes dash {
+  0%,
+  100% {
+    stroke-dasharray: 2500 0;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 0 2500;
+    stroke-dashoffset: 1000;
+  }
+}
 
-// .animationSvg2 {
-//   stroke-dashoffset: 0;
-//   stroke-dasharray: 500;
-//   animation: dash2 20s linear infinite;
-// }
+.animationSvg2 {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 500;
+  animation: dash2 20s linear infinite;
+}
 
-// @keyframes dash2 {
-//     0%, 100% {
-//       stroke-dashoffset: 0;
-//     }
-//     50% {
-//         stroke-dashoffset: 2000;
-//       }
-//   }
+@keyframes dash2 {
+    0%, 100% {
+      stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dashoffset: 2000;
+      }
+  }

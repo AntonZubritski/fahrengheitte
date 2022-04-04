@@ -88,19 +88,21 @@
             top: 90px;
             z-index: 0;
             background-color: #FDF3EA;
-            width: 370pt;
+            width: 50%;
             height: 32vw;
             right: 0px;
-            transition: 1.4s ease;
+            transition: 1s ease;
+            animation: coralOnload 0.9s ease;
         }
 
         .inst1 {
             position: absolute;
             width: 25%;
-            right: 150px;
+            right: 280px;
             top: 255px;
             z-index: 1;
             transition: 1s ease;
+            animation: instOnload 1.3s ease;
         }
 
         .inst2 {
@@ -133,14 +135,30 @@
     }
 }
 
-
-//onLoad Animation
-body {
-    .head-title .inst-block .instOnload {
-        right: 20%;
+@keyframes instOnload {
+    0% {
+        right: 150px;
     }
-
-    .head-title .inst-block .coralOnload {
-        width: 60%;
+    100% {
+        right: 280px;
     }
 }
+@keyframes coralOnload {
+    0% {
+        width: 40%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+//onLoad Animation
+// body {
+//     .head-title .inst-block .instOnload {
+//         right: 20%;
+//     }
+
+//     .head-title .inst-block .coralOnload {
+//         width: 60%;
+//     }
+// }

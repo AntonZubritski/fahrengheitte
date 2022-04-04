@@ -9,32 +9,35 @@ const Card = ({ list }) => {
 
   const cards = list.map((item, key) => {
     return (
-      <div
-        className={listFree(item) ? `card${item.id} cardFree` : `card${item.id}`}
-        key={key + item.title}>
-        <div className="title-group">
-          <div className="title-text">
-            <div className="bold">{item.id}.</div>
-            <div className="thin">{item.title}</div>
+      <div className="card-wrapper">
+        <div
+          className={listFree(item) ? `card${item.id} cardFree` : `card${item.id}`}
+          key={key + item.title}
+        >
+          <div className="title-group">
+            <div className="title-text">
+              <div className="bold">{item.id}.</div>
+              <div className="thin">{item.title}</div>
+            </div>
+            {listFree(item) && <span className="free">free</span>}
           </div>
-          {listFree(item) && <span className="free">free</span>}
-        </div>
-        <div className="detail-info">
-          <ul>
-            {item.texts.map((text, key) => {
-              if (list === courseProgram) {
-                return <li key={item.id + key}>{text}</li>;
-              } else {
-                return (
-                  <div key={item.id + key} className="link">
-                    <a href={text} target="_blank">
-                      Перейти
-                    </a>
-                  </div>
-                );
-              }
-            })}
-          </ul>
+          <div className="detail-info">
+            <ul>
+              {item.texts.map((text, key) => {
+                if (list === courseProgram) {
+                  return <li key={item.id + key}>{text}</li>;
+                } else {
+                  return (
+                    <div key={item.id + key} className="link">
+                      <a href={text} target="_blank">
+                        Перейти
+                      </a>
+                    </div>
+                  );
+                }
+              })}
+            </ul>
+          </div>
         </div>
       </div>
     );
